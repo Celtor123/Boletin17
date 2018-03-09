@@ -6,16 +6,16 @@ import java.util.Random;
 public class Boletin17 {
     int y;
     int r;
-   int numeros[]= new int[5];//arrray int con 5 posiciones de tipo Integer
+   int numeros[]= new int[6];//arrray int con 6 posiciones de tipo Integer
 Random a= new Random();
 public void operacion(){
       
-    for(y=0;y<=4;y++){
-    r=a.nextInt(50)+1;
+    for(y=0;y<=5;y++){
+    r=a.nextInt(51)+1;
       numeros[y]=r;
      
     }
-    for( int e=4;e>=0;e=e-1){
+    for( int e=5;e>=0;e=e-1){
      System.out.println(e+numeros[e]);
     }
 }
